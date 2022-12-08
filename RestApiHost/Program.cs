@@ -37,7 +37,7 @@
                 await testHost.Start();
                 while (!cancel.IsCancellationRequested)
                 {
-                    await Task.Delay(TimeSpan.FromMinutes(1), cancel);
+                    await Task.Delay(TimeSpan.FromSeconds(5), cancel);
                 }
             }
         }
