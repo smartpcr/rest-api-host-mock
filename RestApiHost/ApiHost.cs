@@ -79,7 +79,7 @@ namespace RestApiHost
             var hostFileContent = File.ReadAllText(HostFile);
             var buffer = new StringBuilder(hostFileContent);
             buffer.AppendLine();
-            buffer.AppendLine($"{ipAddress}     localhost");
+            buffer.AppendLine($"127.0.0.1   {ipAddress}");
             File.WriteAllText(HostFile, buffer.ToString());
         }
 

@@ -77,7 +77,7 @@ namespace ProbeStatusClient
         /// <summary>
         /// Well known Uri for Metadata Server aggregate status that HostGAPlugin forwards request to
         /// </summary>
-        private static readonly string WireServerStatusRequestUri = "http://168.63.129.16:82/Microsoft.Compute.WireServer/wireServerAggregateStatus?sv=2017-04-17&se=9999-01-01T00:00:00Z&sr=c&sp=rw&sk=system-1";
+        private static readonly string WireServerStatusRequestUri = "http://asappgateway.azurestack.local:4443/Microsoft.Compute.WireServer/wireServerAggregateStatus?sv=2017-04-17&se=9999-01-01T00:00:00Z&sr=c&sp=rw&sk=system-1";
 
         /// <summary>
         /// Well known Uri for monitor to send probe VM aggregate status request to HostGAPlugin
